@@ -7,7 +7,8 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<String> names = new ArrayList<>();
-        names = new add().run(names);
+        Add add = new Add();
+        names = add().run(names); 
         System.out.println(COFFEE + new generate().run(names));
     }
 }
